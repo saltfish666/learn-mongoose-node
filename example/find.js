@@ -4,7 +4,7 @@ let where = {
 	name: 'saltfish666'
 }
 
-User.find( (err, res) => {
+User.find( where, (err, res) => {
 	if(err) return console.log(err)
 
 	console.log(res)
